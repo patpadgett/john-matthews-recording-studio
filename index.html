@@ -46,34 +46,15 @@
       <div class="hero-stage reveal" data-delay="120">
         <div class="stage-shell">
           <div class="stage-core">
-            <svg class="console-art" viewBox="0 0 760 940" role="img" aria-label="Abstract studio console and tape machine illustration">
-              <defs>
-                <radialGradient id="amber" cx="50%" cy="42%" r="64%"><stop offset="0" stop-color="#dc9250" stop-opacity=".32"/><stop offset="1" stop-color="#17130f" stop-opacity="0"/></radialGradient>
-                <filter id="soft"><feGaussianBlur stdDeviation="22"/></filter>
-              </defs>
-              <rect width="760" height="940" fill="#17130f"/>
-              <ellipse cx="380" cy="410" rx="315" ry="360" fill="url(#amber)" filter="url(#soft)"/>
-              <g fill="none" stroke="#d7c9b8" stroke-opacity=".72">
-                <circle cx="380" cy="292" r="189" stroke-width="1.4"/>
-                <circle cx="380" cy="292" r="156" stroke-width=".7" stroke-dasharray="2 8"/>
-                <circle cx="380" cy="292" r="49" stroke-width="1.2"/>
-                <circle cx="380" cy="292" r="10" fill="#d7c9b8"/>
-                <path d="M380 243V103M423 266l122-70M423 318l122 70M380 341v140M337 318l-122 70M337 266l-122-70" stroke-width="8" stroke-linecap="round" opacity=".42"/>
-              </g>
-              <g transform="translate(86 555)">
-                <rect width="588" height="276" rx="22" fill="#211b16" stroke="#d7c9b8" stroke-opacity=".18"/>
-                <g stroke="#d7c9b8" stroke-opacity=".22"><path d="M35 67H553M35 141H553M35 215H553"/><path d="M98 29V247M196 29V247M294 29V247M392 29V247M490 29V247"/></g>
-                <g fill="#d88340"><circle cx="64" cy="58" r="5"/><circle cx="162" cy="132" r="5"/><circle cx="260" cy="87" r="5"/><circle cx="358" cy="192" r="5"/><circle cx="456" cy="108" r="5"/><circle cx="524" cy="186" r="5"/></g>
-                <g stroke="#eee2d2" stroke-width="5" stroke-linecap="round" opacity=".85"><path d="M64 83v97"/><path d="M162 83v97"/><path d="M260 83v97"/><path d="M358 83v97"/><path d="M456 83v97"/><path d="M524 83v97"/></g>
-                <g fill="#eee2d2"><rect x="50" y="126" width="28" height="12" rx="6"/><rect x="148" y="151" width="28" height="12" rx="6"/><rect x="246" y="105" width="28" height="12" rx="6"/><rect x="344" y="137" width="28" height="12" rx="6"/><rect x="442" y="92" width="28" height="12" rx="6"/><rect x="510" y="155" width="28" height="12" rx="6"/></g>
-              </g>
-            </svg>
-            <div class="stage-caption"><span>Signal path</span><strong>Warm / Clear / Human</strong></div>
+            <video class="studio-video" autoplay muted loop playsinline preload="metadata" poster="assets/hills-east-poster.jpg" aria-label="Inside Hills East Recording Studio">
+              <source src="Hills_East_Recording.mp4" type="video/mp4">
+            </video>
+            <div class="video-shade" aria-hidden="true"></div>
+            <div class="stage-caption"><span>Inside the room</span><strong>Hills East Recording</strong></div>
             <div class="record-light"><i></i> RECORDING</div>
           </div>
         </div>
-        <div class="floating-note note-one"><span>01</span><strong>Capture<br>the feeling</strong></div>
-        <div class="floating-note note-two"><span>TAKE</span><strong>One more.<br>For the record.</strong></div>
+        <button class="sound-toggle" type="button" aria-label="Turn studio video sound on" aria-pressed="false"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span><strong>Sound off</strong></button>
       </div>
     </section>
 

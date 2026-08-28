@@ -28,6 +28,21 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 
 document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
 
+const studioVideo = document.querySelector('.studio-video');
+const soundToggle = document.querySelector('.sound-toggle');
+if (studioVideo && soundToggle) {
+  soundToggle.addEventListener('click', async () => {
+    studioVideo.muted = !studioVideo.muted;
+    soundToggle.classList.toggle('active', !studioVideo.muted);
+    soundToggle.setAttribute('aria-pressed', String(!studioVideo.muted));
+    soundToggle.setAttribute('aria-label', studioVideo.muted ? 'Turn studio video sound on' : 'Turn studio video sound off');
+    soundToggle.querySelector('strong').textContent = studioVideo.muted ? 'Sound off' : 'Sound on';
+    if (studioVideo.paused) {
+      try { await studioVideo.play(); } catch (_) { /* Playback remains user-controlled. */ }
+    }
+  });
+}
+
 const form = document.querySelector('.inquiry');
 const status = document.querySelector('.form-status');
 form.addEventListener('submit', (event) => {

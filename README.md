@@ -16,7 +16,9 @@ Then open `http://127.0.0.1:8080/`.
 
 - `index.html` — client-facing page structure and copy
 - `styles.css` — complete responsive art direction and motion
-- `script.js` — mobile menu, viewport reveals, and static form success state
+- `script.js` — mobile menu, viewport reveals, video sound control, and static form success state
+- `Hills_East_Recording.mp4` — looping hero studio video
+- `assets/hills-east-poster.jpg` — generated video poster for fast, stable first paint
 
 ## Design direction
 
